@@ -1,0 +1,20 @@
+[package]
+name = "solpay-clearinghouse"
+version = "0.1.0"
+description = "SolPay Clearinghouse - USDC payment processor with fee splitting and privacy pool"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solpay_clearinghouse"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.32.1"
+anchor-spl = "0.32.1"

@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "programs/solpay_clearinghouse"
+]
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
